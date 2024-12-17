@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стартовое меню</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FFC0CB; /* Цвет фона */
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .header img {
+            width: 70px; /* Укажите нужный размер логотипа */
+            height: auto;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            position: absolute; /* Позиционирование для перемещения в левую сторону */
+            left: 200px; /* Отступ от левого края */
+            top: 50%; /* Вертикальное центрирование относительно экрана */
+            transform: translateY(-50%); /* Центрирование по вертикали */
+        }
+        .menu img {
+            width: 350px; /* Размер изображения */
+            height: 500px; /* Размер изображения */
+            margin-right: 20px; /* Отступ между изображением и кнопкой */
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+        }
+        .menu-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .menu-content .text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px; /* Увеличенный размер шрифта */
+            font-weight: bold; /* Полужирный шрифт */
+            margin-bottom: 20px; /* Отступ между текстом и кнопкой */
+            color: #ffffff; /* Цвет текста */
+            text-align: left; /* Выравнивание текста по левому краю */
+        }
+        .menu-content button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px; /* Скругление углов кнопки */
+            border: 2px solid #d63f6f; /* Рамка кнопки */
+            background-color: #f5c6c6; /* Цвет фона кнопки */
+            color: #d63f6f; /* Цвет текста кнопки */
+            transition: background-color 3.10s, color 3.10s; /* Плавное изменение цвета */
+        }
+        .menu-content button:hover {
+            background-color: #d63f6f; /* Цвет фона кнопки при наведении */
+            color: #ffffff; /* Цвет текста кнопки при наведении */
+        }
+        .about-us {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .about-us a {
+            text-decoration: none; /* Убирает подчеркивание ссылки */
+        }
+        .about-us button {
+            background: transparent; /* Без фона */
+            color: #d63f6f; /* Цвет текста кнопки */
+            border: 2px solid #d63f6f; /* Граница кнопки */
+            border-radius: 20px; /* Скругление углов кнопки */
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px 20px; /* Размер кнопки */
+            transition: background-color 0.30s, color 0.30s; /* Плавное изменение цвета */
+        }
+        .about-us button:hover {
+            background: #d63f6f; /* Цвет фона кнопки при наведении */
+            color: #ffffff; /* Цвет текста кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Логотип в левом верхнем углу -->
+    <div class="header">
+        <img src="img/Logo2_x2.svg" alt="Логотип">
+    </div>
+
+    <div class="about-us">
+        <a href="aboutus.htm"><button>About Us</button></a>
+    </div>
+
+    <div class="menu">
+        <img src="img/Image.png" alt="Рисунок">
+        <div class="menu-content">
+            <div class="text">Change your life today</div>
+            <a href="магаззин.htm"><button>Get started</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
